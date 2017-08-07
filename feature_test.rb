@@ -4,5 +4,7 @@ oystercard = Oystercard.new
 
 p oystercard.balance
 
-p oystercard.top_up(10)
-p oystercard.top_up(20)
+p oystercard.max?
+
+# p oystercard.top_up(0)
+# p oystercard.top_up(100)
