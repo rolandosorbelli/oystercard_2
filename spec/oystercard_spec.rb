@@ -13,6 +13,8 @@ describe Oystercard do
   end
 
   it "raises and error if we exceed the max limit" do
+  	oystercard = Oystercard.new
+  	value = oystercard.top_up(1)
   	expect(subject.top_up(1)).to raise_error("Top up limit exceeded!") if (:max? == true)
   end
 
