@@ -13,7 +13,7 @@ describe Oystercard do
   end
 
   it "raises and error if we exceed the max limit" do
-  	expect(subject.top_up(:max_value)).not_to raise_error("Top up limit exceeded!")
+  	expect(subject.top_up(1)).to raise_error("Top up limit exceeded!") if (:max? == true)
   end
 
 end

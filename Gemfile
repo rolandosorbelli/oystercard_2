@@ -13,4 +13,7 @@ group :test, :development do
 	gem 'rspec-expectations'
 	gem 'rspec-mocks'
 	gem 'rspec-support'
+	gem 'rubocop'
+	gem 'simplecov', require: false, group: :test
+	gem 'simplecov-console', require: false, group: :test
 end
