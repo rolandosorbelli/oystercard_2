@@ -9,4 +9,8 @@ ruby '2.4.0'
 
 group :test, :development do
 	gem 'rspec'
+	gem 'rspec-core'
+	gem 'rspec-expectations'
+	gem 'rspec-mocks'
+	gem 'rspec-support'
 end
