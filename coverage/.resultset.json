@@ -1,12 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/samellenrieder/ma_week_two/oystercard_2/spec/oystercard_spec.rb": [
+      "/Users/rolando/Makers/oystercard/spec/oystercard_spec.rb": [
         1,
         null,
         1,
-        4,
-        null,
+        5,
         null,
         1,
         1,
@@ -30,20 +29,33 @@
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
         1,
         null,
         null
       ],
-      "/Users/samellenrieder/ma_week_two/oystercard_2/lib/oystercard.rb": [
+      "/Users/rolando/Makers/oystercard/lib/oystercard.rb": [
         1,
         null,
         1,
-        null,
         1,
         null,
         1,
-        5,
-        5,
+        8,
+        8,
+        8,
         null,
         null,
         1,
@@ -61,9 +73,18 @@
         3,
         null,
         null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
         null
       ]
     },
-    "timestamp": 1502202473
+    "timestamp": 1502204937
   }
 }

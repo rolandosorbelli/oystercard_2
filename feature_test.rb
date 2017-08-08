@@ -9,7 +9,5 @@ p oystercard.max?
 p oystercard.top_up(40)
 p oystercard.top_up(50)
 p oystercard.top_up(1)
-# p oystercard.max? == true
-# p oystercard.max?
-# p oystercard.top_up(1)
-
+p oystercard.touch_in
+p oystercard.touch_out
