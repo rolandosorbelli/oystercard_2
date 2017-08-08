@@ -18,9 +18,14 @@ describe Oystercard do
   	expect { oystercard.top_up(1) }.to raise_error("Top up limit exceeded!")
   end
 
+  it "withdrawls money from the card" do
+		t = Oystercard.new
+		balance = t.balance
+	  expect(t.deduct(50)).to eq(balance - 50)
+	end
+
   it "checks if balance is bigger than max_value" do
   	min_balance = subject.balance
-  	expect(subject.max?).to be_true if (:balance > :max_value)
+  	expect(subject.max?).not_to be true
   end
-
 end

@@ -15,6 +15,11 @@ class Oystercard
 		return "£#{balance}"
 	end
 
+	def deduct(amount)
+	 @balance -= amount
+	 return balance
+ end
+
 	def max?
 		@balance >= max_value
 	end
