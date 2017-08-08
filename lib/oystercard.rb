@@ -16,7 +16,7 @@ class Oystercard
 	end
 
 	def max?
-		@balance > max_value
+		@balance >= max_value
 	end
 
 end
