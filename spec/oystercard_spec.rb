@@ -9,13 +9,13 @@ describe Oystercard do
 	end
 
   it "tops up with 1 argument" do
-    expect(subject).to respond_to(:top_up).with(1).argument
+  	expect(subject.respond_to? :top_up).to be true
   end
 
   it "raises and error if we exceed the max limit" do
   	oystercard = Oystercard.new
-  	value = oystercard.top_up(1)
-  	expect(subject.top_up(1)).to raise_error("Top up limit exceeded!") if (:max? == true)
+  	value = oystercard.top_up(900000)
+  	expect { oystercard.top_up(1) }.to raise_error("Top up limit exceeded!")
   end
 
   it "checks if balance is bigger than max_value" do
