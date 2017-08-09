@@ -17,11 +17,6 @@ class Oystercard
     "£#{balance}"
   end
 
-  def deduct(amount)
-    @balance -= amount
-    balance
-  end
-
   def max?
     @balance >= max_value
   end
@@ -37,10 +32,18 @@ class Oystercard
 
   def touch_out
   	@in_use = false
+  	deduct
   end
 
   def insuff_balance?
   	@balance < @min_value
+  end
+
+  private
+
+   def deduct
+    @balance -= @min_value
+    balance
   end
 
 end

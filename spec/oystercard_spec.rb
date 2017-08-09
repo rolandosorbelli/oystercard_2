@@ -15,10 +15,11 @@ describe Oystercard do
     expect { subject.top_up(1) }.to raise_error('Top up limit exceeded!')
   end
 
-  it 'deducts money from the card' do
-    balance = subject.balance
-    expect(subject.deduct(50)).to eq(balance - 50)
-  end
+  # it 'deducts money from the card' do # < --- We now have a minimum fare to deduct, so we don't need this anymore.
+  #   subject.top_up(5)
+  #   subject.send(:deduct)
+  #   expect(subject.deduct).to eq(balance-1)
+  # end
 
   it 'checks if balance is bigger than max_value' do
     expect(subject.max?).not_to be true
@@ -42,5 +43,11 @@ describe Oystercard do
 
   it "raises an error if insufficent balance" do
   	expect { subject.touch_in }.to raise_error("Insufficent balance!")
+  end
+
+  it "checks if a charge is made on touch out" do
+  	subject.top_up(5)
+  	subject.touch_in
+  	expect {subject.touch_out}.to change{subject.balance}.by(-1)
   end
 end
