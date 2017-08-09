@@ -26,7 +26,7 @@ class Oystercard
   def touch_in(entry_station)
     raise('Insufficent balance!') if insuff_balance?
     @in_use = true
-    @journey_history = [entry_station]
+    @journey_history << entry_station
   end
 
   def in_journey?
