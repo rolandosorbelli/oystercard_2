@@ -12,8 +12,11 @@ p oystercard.touch_in('Oxford Circus')
 
 p oystercard.in_journey?
 
-p oystercard.touch_out
+p oystercard.touch_out('Liverpool Street')
 
-p oystercard.touch_in('Piccadilly Circus')
+p oystercard.touch_in("London Bridge")
+p oystercard.touch_out("Waterlooooooooo")
 
-p oystercard.touch_out
+p oystercard.journey_history
+
+p oystercard.journey
