@@ -119,9 +119,35 @@
         2,
         2,
         null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/rolando/Makers/oystercard/spec/station_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
         null
       ]
     },
-    "timestamp": 1502377632
+    "timestamp": 1502379244
   }
 }
